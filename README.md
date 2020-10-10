@@ -8,21 +8,31 @@ The reduction in severity of accidents can be beneficial to the Public Developme
 Data Wrangling
 
 1-	Data Gathering:
- Fortunately, we gave have the data gathered in a csv file and we don’t have to do web-scraping or any other means of collecting data 
+ Fortunately, we gave have the data gathered in a csv file and we don’t have to do web-scraping or any other means of collecting data
+ 
 2-	Data assessment: the data is messy and there are quality issues and tidiness issues so we have to detect these issues to clean our data.
 Detecting these issues manually by eyes on data in sheets software (excel, google sheets…etc.)
 And programmatically using pandas functions (info(), sample(), head(), tail(), value_counts()…etc.)
 
 Data assessment
 •	Drop columns EXCEPTRSNCODE, EXCEPTRSNDESC, REPORTNO, STATUS, INCDATE, PEDROWNOTGRNT, SEGLANEKEY, CROSSWALKKEY, duplicate SEVERITYCODE, INCKEY, COLDETKEY, SDOT_COLCODE, ST_COLCODE, SDOTCOLNUM, OBJECTID (Tidiness issue)
+
 •	Encoding UNDERINFL to be Y/N or 0,1 (Quality issue)
+
 •	Encoding in attention (0 = No, 1 = Yes) (Quality issue)
+
 •	Encoding Under the influence (0 = No, 1 = Yes) (Quality issue)
+
 •	Encoding Speeding (0 = No, 1 = Yes) (Preprocessing for ML) 
+
 •	Encoding Light Conditions (0 = Light, 1 = Medium, 2 = Dark) (Preprocessing for ML)
+
 •	Encoding Weather Conditions(0 = Clear, 1 = Overcast and Cloudy, 2 = Windy, 3 = Rain and Snow Encoding Road Conditions(0 = Dry, 1 = Mushy, 2 = Wet) (Preprocessing for ML)
+
 •	Change type of INCDTTM to datetime (Quality)
+
 •	Rename Columns to proper names (Quality)
+
 3-	Data Cleaning: Fixing the above mentioned issues
 
 
@@ -31,11 +41,17 @@ Analyzing our clean data and obtaining insights
  
 Insights 
 •	Most of accidents cause car damage rather than human injury 
+
 •	Most of accidents are vehicles crash rather than pedestrians hit
+
 •	Most of accidents happen while drivers where sober
+
 •	Most of accidents happen in a dry road 
+
 •	Most of accidents happen in a clear weather
+
 •	Most of accidents happen in day-light
+
 •	Most accidents happen in block area
 
 
