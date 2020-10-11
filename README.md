@@ -5,7 +5,8 @@ The world as a whole suffers due to car accidents, including the USA. National H
 # Stakeholder
 
 The reduction in severity of accidents can be beneficial to the Public Development Authority of Seattle which works towards improving those road factors and the car drivers themselves who may take precaution to reduce the severity of accidents.
-Data Wrangling
+
+# Data Wrangling
 
 1-	Data Gathering:
  Fortunately, we gave have the data gathered in a csv file and we don’t have to do web-scraping or any other means of collecting data
